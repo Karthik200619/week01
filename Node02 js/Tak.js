@@ -1,0 +1,27 @@
+
+const user = {
+  id: 101,
+  name: "Ravi",
+  email: "ravi@gmail.com",
+  role: "student",
+  isActive: true
+};
+// Read and print the user’s name and email
+// Add a new property lastLogin: "2026-01-01"
+// Update role from "student" to "admin"
+// Delete the isActive property
+// Use Object.keys() to list all remaining fields
+
+// --------------------------------------------------------------------
+
+// Read and print the user’s name and email
+console.log(user.name,user.email)
+// Add a new property lastLogin: "2026-01-01"
+user.lastLogin="2026-01-01"
+// Update role from "student" to "admin"
+user.role="admin"
+// Delete the isActive property
+delete user.isActive
+
+// Use Object.keys() to list all remaining fields
+console.log(Object.keys(user))
